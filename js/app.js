@@ -1,5 +1,5 @@
 document.getElementById("change").addEventListener("click",change);
-
+document.getElementById("kur2").selectedIndex = "3";
 
 
 function change(){
