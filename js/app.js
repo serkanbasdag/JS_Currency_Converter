@@ -6,7 +6,7 @@ function change(){
    
     const xhr = new XMLHttpRequest();
 
-    xhr.open("GET","http://data.fixer.io/api/latest?access_key=90fd28db0775d786fc295a4be6bd7bfc",true);
+    xhr.open("GET","https://data.fixer.io/api/latest?access_key=90fd28db0775d786fc295a4be6bd7bfc",true);
    
         xhr.onreadystatechange = function() {
           if (this.readyState == 4 && this.status == 200) {
