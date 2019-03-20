@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h"
+    crossorigin="anonymous">
+<style>
+.btn:hover{
+    background-color: green;
+}
+</style>
+
+    <title>Currency Converter</title>
+</head>
+<body background="bg.jpg">
+    <div class="container">
+            <h1 class="mt-5 " style="color:#359720; font-weight: bold;">Currency Converter</h1>
+        <div class="row mt-5">
+                        <div class="col-5 mt-5">
+                                <div class="card bg-dark mt-5">
+                                        <div class="card-header text-light" style="font-weight: bold" >Amount</div>
+                                          <div class="card-body">
+                                                <div class="form-group d-flex flex-column align-items-center">
+                                                        <select id="kur1" class="form-control mx-2">
+                                                            <option value="Euro">EUR</option>
+                                                            <option value="Dolar">USD</option>
+                                                            <option value="İsviçre Frankı">CHF</option>
+                                                            <option value="TL">TRY</option>
+                                                          </select>
+                                                        <input class="form-control" type="number" id="doviz1" min="0">
+                                                    </div>  
+                                          </div>
+                                   </div>
+                            </div>
+                            <div class="mt-5">
+                                    <button id ="change" class="btn btn-dark mt-5"><i class="fas fa-sync-alt"> Convert</i></button>
+                            </div>
+                            <div class="col-5 mt-5">
+                                    <div class="card bg-dark mt-5">
+                                            <div class="card-header text-light" style="font-weight: bold">Amount</div>
+                                              <div class="card-body">
+                                                    <div class="form-group d-flex flex-column  align-items-center">
+                                                            <select id="kur2" class="form-control mx-2">
+                                                                <option value="Euro">EUR</option>
+                                                                <option value="Dolar">USD</option>
+                                                                <option value="İsviçre Frankı">CHF</option>
+                                                                <option value="Tl">TRY</option>
+                                                              </select>
+                                                            <input class="form-control" type="number" id="doviz2" min="0" disabled>
+                                                        </div>
+                                              </div>
+                                       </div>
+                                </div>
+                    </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
